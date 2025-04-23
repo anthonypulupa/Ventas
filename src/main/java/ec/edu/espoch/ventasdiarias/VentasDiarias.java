@@ -32,7 +32,7 @@ public class VentasDiarias {
             System.out.println("2. Calcular el dia con ventas mas cercanas al promedio");
             System.out.println("3. Mostrar el dia con la venta mas alta y el dia con la venta mas baja");
             System.out.println("4. Calcular el monto acumulado de ventas durante los primeros tres dias y los ultimos tres dias");
-            System.out.println("5. Salir");
+            System.out.println("5. Salir ");
             System.out.print("Seleccione una opción: ");
             int opcion = scanner.nextInt();
 
@@ -44,6 +44,7 @@ public class VentasDiarias {
                     }
                     System.out.println("Total de ventas de la semana: " + total);
                     break;
+                    
 
                 case 2:
                     double promedio = 0;
@@ -88,6 +89,14 @@ public class VentasDiarias {
                     double totalUltimosTres = ventas[4] + ventas[5] + ventas[6];
                     System.out.println("el total de venta de  los tres primeros dias : " + totalPrimerosTres);
                     System.out.println("el total de venta de  los tres ultimos dias : " + totalUltimosTres);
+                    break;
+                case 5:
+                    salir = true;
+                    System.out.println("Programa Finalizado.");
+                    break; 
+
+                default:
+                    System.out.println("Opcion invalida. Intente de nuevo.");
             }
         }
     }
